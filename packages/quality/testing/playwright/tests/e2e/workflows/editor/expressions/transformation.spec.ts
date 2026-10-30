@@ -155,7 +155,7 @@ test.describe(
 									{
 										id: 'check-id',
 										name: 'checkId',
-										value: '={{ `chk_${$json.id ?? 123}\nend` }}',
+										value: '={{ `\nchk_${$json.id ?? 123}\n${$json.name ?? "John"}_${$json.id ?? 123}\n` }}',
 										type: 'string',
 									},
 								],
